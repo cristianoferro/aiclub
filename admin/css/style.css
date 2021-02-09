@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+*{box-sizing:border-box;}
+
+a{text-decoration: none;
+}
+
+body{margin:0;
+font-family: 'Questrial', sans-serif;
+background: red; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient( left, #9DDBF2, #DAF0F6); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient( left, #9DDBF2, #DAF0F6); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient( left, #9DDBF2, #DAF0F6); /* For Firefox 3.6 to 15 */
+background: linear-gradient(left, 9DDBF2, DAF0F6); /* Standard syntax (must be last) */
+}
+
+a{text-decoration:none;color:inherit;}
+h1{margin:0;}
+h3{margin:0;
+  margin-left: 2vw;
+  font-size:2vw;
+}
+
+.clear{clear: both;
+}
+
+.top{
+  padding:1em;
+  background-color:#000;
+  color:#FFFFFF;
+  font-size: 1.4vw;
+  color:#14284F;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align:center;
+  display:block;
+  margin:2em auto 0 auto;
+  border-bottom:  0.1vw solid #ffffff;
+  max-width:80%;
+  text-transform: uppercase;
+}
+
+.top h1{
+  font-size:2vw;
+  text-align:center;
+  margin:0 auto;
+}
+
+.top:hover{
+  box-shadow: 0 0.5vw 2vw 0.1vw rgba(255, 255, 255, 0.6);
+}
+
+.contentor h2{
+  margin:2em auto 0 auto;
+}
+
+.contentor{
+  max-width:80%;
+  margin:0 auto;
+}
+
+/* LISTA */
+
+.item{
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(0, 78, 102, 0.05);
+  box-shadow:0 0 0.2vw #ffffff;
+  margin-top:2em;
+
+}
+.lista{
+
+}
+.lista-img img{
+  float:left;
+  width:10%;
+  border-radius:10%;
+  margin:5%;
+  border: 0.2vw solid white;
+  box-shadow: 0 0 2em 0.2em rgba(255, 255, 255, 0.6);
+}
+.lista-title{
+  float:left;
+  width:70%;
+  margin-top: 5%;
+  line-height: 1.5em;
+  height: 3em;
+  overflow: hidden;
+  font-size: 2vw;
+}
+.lista-web{
+  float:left;
+  width:70%;
+  margin-top: 5%;
+  line-height: 1.5em;
+  height: 1.5em;
+  overflow: hidden;
+  font-size: 2vw;
+
+}
+
+.lista-index{
+  float:left;
+  width:70%;
+  margin-top: 4%;
+  line-height: 1.5em;
+  height: 3em;
+  overflow: hidden;
+  font-size: 2vw;
+}
+
+.lista-botoes{
+  float:right;
+  margin-top: 0em;
+  margin-right: 3em;
+  display: block;
+  width:70%;
+  font-size: 1.3vw;
+}
+.lista-edit{
+  float:right;
+  display: inline;
+  margin-right: 3em;
+  margin-left: 3em;
+  text-transform: uppercase;
+  padding:0.5em 1em 0.5em 1em ;
+  background-color: #e6ffff;
+  cursor: pointer;
+  width: 25%;
+  text-align: center;
+
+}
+.lista-delete{
+  float:right;
+  display: inline;
+  color: #cc0000;
+  text-transform: uppercase;
+  padding:0.5em 1em 0.5em 1em ;
+  background-color: #e6ffff;
+  cursor: pointer;
+  width: 25%;
+  text-align: center;
+}
+#insert-button{
+  float:left;
+  display: inline;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  padding:0.5em 1em 0.5em 1em ;
+  background-color: #e6ffff;
+  cursor: pointer;
+  font-size: 1.3vw;
+}
+
+
+/* Forms */
+
+.janela_insert{
+position:fixed;
+background-color: rgba(0, 0, 0, 0.6);
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: 10;
+display: none;
+}
+.item-insert{
+width: 80%;
+margin:0 auto;
+margin-top: 10%;
+background-color: #9DDBF2;
+padding:5%;
+}
+label{
+  display:block;
+  margin:0.5em 0 0.2em 0;
+  font-weight:bold;
+  text-transform: uppercase;
+  font-size: 1.3vw;
+}
+input,textarea{display:block;
+  border:none;
+  box-shadow:0 0 0.5vw #ffffff;
+  width:100%;
+  padding:0.7em 1em;
+  margin:0 0 2em 0;
+  font-size:1em;
+  font-family:inherit;
+  color:#333;
+  background:#ffffff;
+}
+
+textarea{height:12em;font-family:inherit;
+resize: none;}
+input.submit_button{display:inline-block;
+  color: #000;
+  box-shadow:0 0 1vw #80dfff;
+  cursor:pointer;
+  text-transform: uppercase;
+  padding:0.5em 1em 0.5em 1em ;
+  background-color: #e6ffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+input[type="file"]{width:auto;
+  padding:0.2em;
+  font-size: 1.3vw;
+  background-color: #e6ffff;
+
+}
+
+
+
+
+
+
+
+
+/* JANELA EDITAR */
+
+
+.janela_editar{
+position:fixed;
+background-color: rgba(0, 0, 0, 0.6);
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: 10;
+}
+
+
+
+
+
